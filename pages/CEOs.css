@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,700;1,700&display=swap');
+
+
+    *{
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+        border: none;
+        font-family: "Roboto", sans-serif;
+    }
+
+    body {
+        padding-top: 40px;
+        background: #FBFBFB;
+    }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 999;
+    background-color: #86D3A050;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    ul{
+        margin-left: auto;
+        margin-right: 1.75rem;
+        display: flex;
+        align-items: center;
+        gap: 1.75rem;
+
+        button{
+            text-decoration: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 10px;
+            background-color: #B3CBBB;
+            box-shadow: 0 4px 4px #00000025;
+        }
+
+        button:hover{
+                border-radius: 15px;
+                margin-inline: -0.2rem;
+                padding: 0.8rem 1.4rem;
+                transition: 0.2s;
+                box-shadow: 4px 8px 4px #00000025;
+        }
+        button:not(:hover){
+            transition: 0.2s;
+        }
+
+        
+    }
+    
+}
+
+main{
+    display: contents;
+    align-items: center;
+    justify-content: center;
+}
+
+.ESG_Titulo{
+    margin: 0 15px;
+    color: #86D3A0;
+    font-family: "Exo", sans-serif;
+}
+
+.img_logoEmpresa{
+    width: 57px;
+    height: 57px;
+}
+
+
+.img_logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 4px #D9D9D9;
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.conteiner_cardCriadores{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    animation-name: animation_criadores;
+    animation-duration: 1.3s;
+}
+
+@keyframes animation_criadores{
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* .conteiner_cardCriadores {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin: 10rem 20% auto 20%;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 10px;
+    scroll-snap-align: start;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card a {
+    display: inline-block;
+    color: #000;
+    font-size: 20px;
+    margin-right: 5px;
+} */
+
+
+
+
+.cardCriadores{
+    background: #ffffff;
+    box-shadow: 0px 10px 17px -3px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    width: 250px;
+    height: auto;
+}
+
+.cardCriadores:hover{
+    z-index: 1;
+    margin-inline: -25px;
+    transition: 0.3s;
+    background: #ffffff;
+    box-shadow: 0px 10px 17px 17px rgba(0,0,0,0.1);
+    border-radius: 0.5rem; 
+    width: 300px;
+
+    .img_Criadores{
+        width: 300px;
+        height: 300px;
+        transition: 0.3s;
+    }
+
+    .conteiner_info{
+        svg{
+            transition: 0.3s;
+            width: 40px;
+            height: 40px;
+        }
+        h3{
+            transition: 0.3s;
+            font-size: 23.4px;
+        }
+    }
+}
+
+.cardCriadores:not(:hover){
+    transition: 0.3s;
+    .img_Criadores{
+        transition: 0.3s;
+    }
+
+    .conteiner_info{
+        svg{
+            transition: 0.3s;
+        }
+        h3{
+            transition: 0.3s;
+        }
+    }
+}
+
+
+.img_Criadores{
+    border-radius: 0.5rem 0.5rem 0 0 ;
+    height: 250px;
+    width: 250px;
+}
+
+.conteiner_info{
+    display: flex;
+    gap: 9px;
+    align-items: end;
+    padding: 6px;
+}
