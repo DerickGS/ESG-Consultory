@@ -11,6 +11,7 @@
     border: none;
     font-family: "Roboto", sans-serif;
 }
+
 body {
     padding-top: 72px;
     background: #FBFBFB;
@@ -23,8 +24,6 @@ body {
 .menu-none{
     display: none;
 }
-
-
 header{
     position: fixed;
     top: 0;
@@ -95,117 +94,48 @@ main{
     position: relative;
     left: 0;
     bottom: 0;
+
 }
 
-
-.img_logo{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: solid 4px #D9D9D9;
-    background: #ffffff;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-.title{
-    display: block;
-    text-align: center;
-    margin: 5rem 10%;
-}
-
-.cardConteiner_info{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.card_info{
-    width: 220px;
-    height: 220px;    
-    border-radius: 1rem;
-    background: #ffffff;
-    box-shadow: 25px 25px 50px #00000024,
-    25px 25px 50px #E3E3E3, 25px 25px 50px #E3E3E3 inset;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-.card_icon{
-    width: 36px;
-    height: 36px;
-    align-items: center;
-    justify-content: center;
-    background-color: #86D3A050;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 10px;
-    border-radius: 25%;
-    margin-inline: auto;
-    margin-top: -25px;
-}
-
-.secondary_text{
-    display: block;
-    text-align: center;
-    margin: 5rem 10%;
-}
-
-.secondary_text > * {
-    margin: 2rem 20%;
-}
-
-.formCliente{
-    background: #ffffff;
-    margin: 10px 20%;
-    padding: 20px 25px 20px 20px;
-
-    border-radius: 1.75rem;
-    box-shadow: 0px 10px 35px -3px rgba(0,0,0,0.3); 
+.img{
+    background: url(../img/noah-buscher-x8ZStukS2PM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     
-        form{
-            input, textarea{
-                border: #63636350 1px solid;
-                width: 100%;
-                height: 1.5rem;
-                border-radius: 0.5rem;
-                padding: 4px 0px 1px 5px ;
-            }
-            textarea{
-                height: 7rem;
-            }
+    height: 70vh;
+    align-items: center;
+    justify-content: right;
+    display: flex;
+    
+    color: #ffffff;
+    
+    div{
+        text-align: right;
+        width: 35%;
+        margin: 3rem;
+        
+        p,h2{
+            margin: 1rem 0;
         }
-
-        form > * {
-            margin: 7px 0 3px 0;
-        }
+    }
 }
-
-
-
-
-
 
 .button{
     text-decoration: none;
+    font-size: 18px;
     padding: 0.5rem 1.2rem;
     border-radius: 10px;
-    background-color: #B3CBBB;
+    background-color: #b3cbbbee;
     box-shadow: 0 4px 4px #00000025;
-
+    margin-top: 3rem;
+    
     display: flex;
     text-align: center ;
     justify-content: center;
     align-items: center;
-
+    float: right;
+    
     *{
         margin-left: 5px;
     }
@@ -213,20 +143,33 @@ main{
 
 .button:hover{
     border-radius: 15px;
-    /* margin: -0.2rem -0.2rem -0.2rem -0.2rem; */
-    margin: 3.8px -0.2rem 0rem -0.2rem;
+    margin: 2.8rem -0.2rem -0.2rem -0.2rem;
     padding: 0.7rem 1.4rem;
     transition: 0.2s;
     box-shadow: 4px 8px 4px #00000025;
-
-    /* background: radial-gradient(circle, rgba(253,187,45,1) 0%, rgba(179,203,187,1) 70%); */
-
-    /* background: radial-gradient(circle, rgba(179,203,187,1) 30%, rgba(148,187,233,1) 100%); */
 }
 
 .button:not(:hover){
     transition: 0.2s;
 }
+
+.secondary_text{
+    display: block;
+    text-align: center;
+    margin: 5rem 20%;
+
+    div{
+        margin-top: 20px;
+        display: grid;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
 
 @media (max-width: 830px) {
 
@@ -283,22 +226,29 @@ main{
 
 
 
-    .cardConteiner_info{
-        display: grid;
-        gap: 20px;
+    .img{
+        justify-content: left;
+        height: 50vh;
+        
+        div{
+            text-align: left;
+            width: 80%;
+            margin: 20px;
+            
+            p,h2{
+                margin: 1rem 0;
+            }
+        }
+
+        .button{
+            float: left;
+        }
     }
 
-    .secondary_text > *{
-        margin-inline: 0;
-    }
-
-    .formCliente{
-        margin-inline: 5%;
+    .secondary_text{
+        margin-inline: 10%;
     }
 }
-
-
-
 
 @media (min-width: 600px) {
     html {
