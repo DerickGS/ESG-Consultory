@@ -103,7 +103,7 @@ main{
     background-size: cover;
     background-position: center;
     
-    height: 70vh;
+    /* height: 500px; */
     align-items: center;
     justify-content: right;
     display: flex;
@@ -228,7 +228,8 @@ main{
 
     .img{
         justify-content: left;
-        height: 50vh;
+        /* height: 380px; */
+        /* height: 50vh; */
         
         div{
             text-align: left;
