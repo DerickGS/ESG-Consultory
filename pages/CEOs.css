@@ -180,6 +180,7 @@ main{
         }
         h3{
             font-size: 23.4px;
+            transition: 0.4s;
         }
     }
 }
@@ -302,6 +303,28 @@ main{
     .button_menu{
         background: none;
         cursor: pointer;
+    }
+
+
+    .cardCriadores:hover{
+        width: 250px;
+        height: auto;
+    
+        .img_Criadores{
+            width: 250px;
+            height: 250px;
+        }
+    
+        .conteiner_info{
+            svg{
+                width: 32px;
+                height: 32px;
+            }
+            h3{
+                font-size: 20px;
+                transition: 0.4s;
+            }
+        }
     }
 }
 
