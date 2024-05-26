@@ -228,14 +228,14 @@ main{
     transition: 0.2s;
 }
 
-@media (max-width: 830px) {
+@media (max-width: 1035px) {
 
     .ESG_Titulo{
         display: none;
     }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 700px) {
     .header_desktop{
         display: none;
     }
@@ -280,23 +280,20 @@ main{
         background: none;
         cursor: pointer;
     }
+}
 
-
-
+@media (max-width: 530px) {
     .cardConteiner_info{
         display: grid;
         gap: 20px;
     }
-
     .secondary_text > *{
         margin-inline: 0;
     }
-
     .formCliente{
         margin-inline: 5%;
     }
 }
-
 
 
 

@@ -310,11 +310,15 @@ main{
     }
 }
 
-@media (max-width: 830px) {
-
+@media (max-width: 1035px) {
     .ESG_Titulo{
         display: none;
     }
+}
+
+@media (max-width: 830px) {
+
+
 
     .grid_info{
         grid-template-columns: 1fr;
@@ -384,7 +388,7 @@ main{
     }  
 }
 
-@media (max-width: 530px) {
+@media (max-width: 700px) {
     .header_desktop{
         display: none;
     }

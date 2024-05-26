@@ -168,17 +168,15 @@ main{
 
 
 
-
-
-
-@media (max-width: 830px) {
-
+@media (max-width: 1035px) {
     .ESG_Titulo{
         display: none;
     }
 }
 
-@media (max-width: 530px) {
+
+@media (max-width: 700px) {
+
     .header_desktop{
         display: none;
     }
@@ -224,7 +222,9 @@ main{
         cursor: pointer;
     }
 
+}
 
+@media (max-width: 530px) {
 
     .img{
         justify-content: left;

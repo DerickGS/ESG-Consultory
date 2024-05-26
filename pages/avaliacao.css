@@ -208,12 +208,13 @@ main{
     }
 }
 
-
-@media (max-width: 830px) {
-
+@media (max-width: 1035px) {
     .ESG_Titulo{
         display: none;
     }
+}
+
+@media (max-width: 830px) {
 
     .conteiner_cardCuriosities {
         display: grid;
@@ -222,7 +223,7 @@ main{
     }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 700px) {
     .header_desktop{
         display: none;
     }
@@ -267,13 +268,13 @@ main{
         background: none;
         cursor: pointer;
     }
+}
 
-
-
+@media (max-width: 530px) {
     .img{
         justify-content: left;
         /* height: 440px; */
-        
+
         div{
             text-align: left;
             width: 80%;
