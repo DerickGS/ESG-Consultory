@@ -222,7 +222,7 @@ main{
     align-items: start;
 } 
 
-.container_imgLeft_div div {
+.container_imgLeft_div div {    
     margin:  2rem 2rem 5rem 2rem;
     display: grid;
     gap: 2rem;
@@ -254,6 +254,7 @@ main{
 .material_img img{
     box-shadow: 17px 0px 10px -3px rgba(0,0,0,0.1);
     border-radius: 0.5rem ;
+    object-fit: cover;
 }
 
 .material_text div{

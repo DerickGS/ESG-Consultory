@@ -90,7 +90,7 @@ main{
 
 .footer{
     margin-top: 3rem;
-    background: #b1b2b3;
+    background: #B3CBBB;
     padding: 2rem;
     text-align: center;
     position: relative;
@@ -100,7 +100,7 @@ main{
 }
 
 .img{
-    background: url(../img/noah-buscher-x8ZStukS2PM-unsplash.jpg);
+    background: url(../img/tim-swaan-eOpewngf68w-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
