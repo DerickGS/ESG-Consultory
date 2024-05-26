@@ -86,7 +86,7 @@ main{
 
 .footer{
     margin-top: 3rem;
-    background: #b1b2b3;
+    background: #B3CBBB;
     padding: 2rem;
     text-align: center;
     position: relative;
@@ -216,7 +216,7 @@ main{
 }
 
 .container_imgLeft_div {
-    background-color: #686868;
+    background-color: #626262;
     color: white;
     display: grid;
     align-items: start;
@@ -228,7 +228,10 @@ main{
     gap: 2rem;
 }
 
-
+.grid_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 .card_info{
     background: #ffffff;
@@ -281,6 +284,10 @@ main{
     float: left;
 }
 
+.button *{
+    margin-left: 5px;
+}
+
 .button:hover{
     border-radius: 15px;
     margin: 0.8rem -0.2rem 0.3rem -0.2rem;
@@ -309,6 +316,14 @@ main{
         display: none;
     }
 
+    .grid_info{
+        grid-template-columns: 1fr;
+    }
+
+    .card_info{
+        margin: 1rem 5% 1rem 5%;
+        padding: 1rem 1rem 3rem 1rem;
+    }
 
     .quadradinhos {
         display: grid;
